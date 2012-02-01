@@ -23,7 +23,7 @@
     </ul>
   </div>
   <div class="descricao_principal">
-    <table>
+    <table cellpadding="0" cellspacing="0">
       <tr>
         <td class="linha1">Nome: <%=@car.name%></td>
       </tr>
@@ -44,7 +44,7 @@
       </tr>
     </table>
     
-    <table class="table_valor">
+    <table class="table_valor" cellpadding="0" cellspacing="0">
       <tr>
         <td class="linha1">Valor: <%= number_to_currency(@car.price, :unit => "R$ ", :separator => ",", :delimiter => ".") %></td>
       </tr>
@@ -56,18 +56,18 @@
         <td class="title linha1">Descrição</td>
       </tr>
       <tr>
-        <td class="linha2"><%= @car.description %></td>
+        <td class="descricao linha2"><%= @car.description %></td>
       </tr>
       <tr>
         <td class="title linha1">Observação</td>
       </tr>
       <tr>
-        <td class="linha2"><%= @car.note %></td>
+        <td class="descricao linha2"><%= @car.note %></td>
       </tr>
     </table>
   </div>
   <div class="proposta">
-    <table>
+    <table cellpadding="0" cellspacing="0">
       <tr>
         <td class="title linha1">Enviar Proposta:</td>
       </tr>

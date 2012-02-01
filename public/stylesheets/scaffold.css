@@ -74,18 +74,19 @@ body div.geral div.topo div.menu ul li.bordernone{
 
 body div.geral div.buscar{
 	width: 260px;
-	height: 179px;
+	height: 232px;
 	float: left;
 	background-image: url("../images/buscar_por.gif");
 }
 body div.geral div.buscar form{
 	width:225px;
 	height:135px;
-	padding: 50px 0 0 30px;
+	padding: 60px 0 0 30px;
 }
 body div.geral div.buscar form p{
 	float: left;
 	width: 210px;
+	height: 22px;
 	padding-bottom: 8px;
 }
 body div.geral div.buscar form p label{
@@ -96,14 +97,17 @@ body div.geral div.buscar form p label{
 body div.geral div.buscar form p select{
 	float: left;
 	width: 150px;
+	height:22px;
 	font-size:12px;
+	margin: 0;
+	padding: 0;
 }
 body div.geral div.buscar form p input{
 	float: right;
 }
 body div.geral div.vitrine{
 	width: 625px;
-	height: 167px;
+	height: 220px;
 	margin-top: 12px;
 	margin-left: 15px;
 	float: left;
@@ -111,7 +115,7 @@ body div.geral div.vitrine{
 }
 body div.geral div.vitrine ul{
 	width: 625px;
-	height: 167px;
+	height: 220px;
 	margin: 0;
 	padding: 0;
 	float: left;
@@ -119,7 +123,7 @@ body div.geral div.vitrine ul{
 }
 body div.geral div.vitrine ul li{
 	width: 625px;
-	height: 167px;
+	height: 220px;
 	margin: 0;
 	padding: 0;
 	float: left;
@@ -130,7 +134,7 @@ body div.geral div.vitrine div.nav{
 	z-index:1;
 	width: 150px;
 	height: 15px;
-	padding-top: 140px;
+	padding-top: 190px;
 	padding-left: 10px;
 }
 body div.geral div.vitrine div.nav button{
@@ -154,6 +158,8 @@ body div.geral div.menu_lateral{
 	width: 260px;
 	height: 612px;
 	margin-top: 15px;
+	font-family: Chaparral Pro;
+	font-size: 14px;
 	float: left;
 }
 body div.geral div.menu_lateral div.sobre_nos{
@@ -365,41 +371,59 @@ body div.geral div.descricao_secundaria{
 	width: 523px;
 	height: 375px;
 	float: left;
-	display: block;
 	margin: 20px 0 0 37px;
 }
 body div.geral div.descricao_secundaria table{
-	width: 523px;
+	width: 500px;
 	height: 375px;
 }
 body div.geral div.descricao_secundaria table tr td{
 	border: 1px solid #cccccc;
-	width: 523px;
+	width: 500px;
 	padding-top: 9px;
 	padding-left: 10px;
+	float: left;
 }
 body div.geral div.descricao_secundaria table tr td.title{
-	height: 35px;
+	height: 20px;
+}
+body div.geral div.descricao_secundaria table tr td.descricao{
+	height: 138px;
 }
 body div.geral div.proposta{
 	width: 300px;
 	height: 375px;
 	float: left;
-	display: block;
 	margin: 20px 0 0 10px;
 }
 body div.geral div.proposta table{
 	width: 300px;
 	height: 375px;
-}
-body div.geral div.proposta table tr td{
-	border: 1px solid #cccccc;
-	width: 300px;
-	padding-top: 9px;
-	padding-left: 10px;
+	border: none;
 }
 body div.geral div.proposta table tr td.title{
-	height: 35px;
+	border: 1px solid #cccccc;
+	width: 278px;
+	padding-top: 9px;
+	padding-left: 10px;
+	float: left;
+	display: block;
+}
+body div.geral div.proposta table tr td.form{
+	border: 1px solid #cccccc;
+	width: 278px;
+	height: 328px;
+	padding-top: 9px;
+	padding-left: 10px;
+	float: left;
+	display: block;
+}
+
+body div.geral div.proposta table tr td.form{
+	height: 325px;
+}
+body div.geral div.proposta table tr td.title{
+	height: 20px;
 }
 body div.geral div.proposta table tr td.form form{
 	width: 270px;
@@ -456,6 +480,7 @@ body div.geral div.contato_esquerda{
 	height: 346px;
 	margin-top: 15px;
 	margin-right: 15px;
+	font-size: 14px;
 	float: left;
 	display: block;
 	background-image: url("../images/fale_conosco.gif");
@@ -472,7 +497,7 @@ body div.geral div.contato_esquerda div.dados p{
 	margin-bottom: 10px;
 }
 body div.geral div.contato_esquerda div.dados p span{
-	width: 50px;
+	width: 65px;
 	height: 40px;
 	float: left;
 }
@@ -495,7 +520,7 @@ body div.geral div.contato_direita form p{
 	margin-bottom: 5px;
 }
 body div.geral div.contato_direita form p label{
-	width: 50px;
+	width: 65px;
 	height: 30px;
 	float: left;
 }
@@ -511,7 +536,7 @@ body div.geral div.contato_direita form p textarea{
 	height: 80px;
 }
 body div.geral div.contato_direita form p.button{
-	width: 324px;
+	width: 340px;
 	margin-right: 2px;
 	float: left;
 }
@@ -568,6 +593,8 @@ body div.geral div.empresa div.dados{
 	width: 850px;
 	height: 475px;
 	float: left;
+	font-family: Chaparral Pro;
+	font-size: 14px;
 	margin: 50px 0 0 30px;
 }
 body div.geral div.empresa div.dados p img{
@@ -583,6 +610,7 @@ body div.geral div.rodape{
 	padding-right: 5px;
 	background-color: white;
 	border: 1px solid #cccccc;
+	font-size: 14px;
 	float:left;
 	text-align:right;
 }

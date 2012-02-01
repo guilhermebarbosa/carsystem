@@ -37,6 +37,10 @@
   			  <%= f.label :carmodel, "Modelo" %>
   			  <%= f.select :carmodel_id_eq, @carmodels, {:include_blank => true} %>
   			</p>
+  			<p>
+  			  <%= f.label :year, "Ano" %>
+  			  <%= f.select :year_eq, Car.find(:all, :conditions => ["year is not null"], :order => "year").collect { |c| [c.year, c.year] }, {:include_blank => true} %>
+  			</p>
         <p>
           <%= f.submit "Search" %>
         </p>
@@ -45,16 +49,16 @@
     <div class="vitrine">
       <ul>
         <li>
-          <%= image_tag("civic.png", :width => "625", :height => "167") %>
+          <%= image_tag("civic.png", :width => "625", :height => "220") %>
         </li>
         <li>
-          <%= image_tag("civic.png", :width => "625", :height => "167") %>
+          <%= image_tag("civic.png", :width => "625", :height => "220") %>
         </li>
         <li>
-          <%= image_tag("civic.png", :width => "625", :height => "167") %>
+          <%= image_tag("civic.png", :width => "625", :height => "220") %>
         </li>
         <li>
-          <%= image_tag("civic.png", :width => "625", :height => "167") %>
+          <%= image_tag("civic.png", :width => "625", :height => "220") %>
         </li>
       </ul>
       <div class="nav">

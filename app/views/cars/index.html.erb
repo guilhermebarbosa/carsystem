@@ -9,7 +9,7 @@
   <% end %>
   <div class="veiculo<%=@car_css%>">
     <p class="image">
-      <%= link_to image_tag(car.attachments[0].url(:thumb)), car.attachments[0].url(:original), :rel => "image" %>
+      <%= link_to image_tag(car.attachments[0].url(:thumb)), car %>
     </p>
     <p class="text">
       <span><%= link_to car.name, car %></strong></span>
