@@ -132,7 +132,7 @@ body div.geral div.vitrine ul li{
 body div.geral div.vitrine div.nav{
 	position: absolute;
 	z-index:1;
-	width: 150px;
+	width: 200px;
 	height: 15px;
 	padding-top: 190px;
 	padding-left: 10px;
@@ -412,15 +412,11 @@ body div.geral div.proposta table tr td.title{
 body div.geral div.proposta table tr td.form{
 	border: 1px solid #cccccc;
 	width: 278px;
-	height: 328px;
+	height: 326px;
 	padding-top: 9px;
 	padding-left: 10px;
 	float: left;
 	display: block;
-}
-
-body div.geral div.proposta table tr td.form{
-	height: 325px;
 }
 body div.geral div.proposta table tr td.title{
 	height: 20px;
