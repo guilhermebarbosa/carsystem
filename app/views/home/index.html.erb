@@ -1,0 +1,34 @@
+<div class="menu_lateral">
+  <div class="sobre_nos">
+    <p>
+      <% if !@company.blank? %>
+        <%= @company.description %>
+      <% end %>
+    </p>
+  </div>
+  <div class="horario_funcionamento">
+    <p>
+      <% if !@operation.blank? %>
+        <%= @operation.description %>
+      <% end %>
+    </p>
+  </div>
+</div>
+<div class="destaques">
+<% @x = 1 %>
+<% @highlights.each do |highlight| %>
+  <div class="destaque<%=@x%>">
+    <p class="image">
+      <%= link_to image_tag(highlight.attachments[0].url(:thumb)), highlight %>
+    </p>
+    <p class="text">
+      <span><%= link_to highlight.name, highlight %></strong></span><br>
+      Ano: <%= highlight.year %><br>
+      Estado: <%= (highlight.state == "Usado" ? "Usado (" + highlight.km + " Km)" : "Novo") %><br>
+      Cor: <%= highlight.color %><br>
+      Preço: <%= number_to_currency(highlight.price, :unit => "R$ ", :separator => ",", :delimiter => ".") %><br>
+    </p>
+  </div>
+  <% @x = @x + 1 %>
+<% end %>
+</div>

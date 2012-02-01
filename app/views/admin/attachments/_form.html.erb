@@ -1,0 +1,13 @@
+<%= form.inputs "#{resource.class.name.titlecase} Imagens (2Mb Max Each)" do %>
+    <% 5.times { resource.attachments.build }; index = 1 %>
+    <%= form.semantic_fields_for :attachments do |attachment| %>
+        <% if attachment.object.new_record? %>
+            <%= attachment.input :asset, :as => :file, :label => "Attachment %s" % [index] %>
+        <%else %>
+            <li>
+                <label>Attachment <%= index %> (<%= attachment.check_box :_destroy %> Delete?)</label>
+                <%= link_to( File.basename( attachment.object.asset.path ), attachment.object.asset.url ) %>
+            </li>
+        <% end; index += 1 %>
+    <% end %>
+<% end %>

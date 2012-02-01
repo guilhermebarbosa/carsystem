@@ -1,0 +1,588 @@
+body { 
+	background-color: #f0f1f2;
+	font-family: Chaparral Pro;
+	font-size: 12px;
+	color: black;
+}
+
+table tr td.linha1{
+	background-color: #f0f1f2;
+}
+table tr td.linha2{
+	background-color: #f9f9f9;
+}
+
+body div.geral{
+	width: 900px;
+	height: 1110px;
+	margin-top: 20px;
+	left: 50%;
+	margin-left: -450px;
+	position: relative;
+}
+body div.geral div.topo{
+	width: 900px;
+	height: 185px;
+	margin-bottom: 15px;
+	background-color: white;
+}
+body div.geral div.topo div.logo{
+	width: 900px;
+	height: 142px;
+	background-color: white;
+}
+
+
+body div.geral div.topo div.menu{
+	width: 900px;
+	height: 43px;
+	background-image: url("../images/fundo_menu.gif");
+}
+body div.geral div.topo div.menu ul{
+	list-style: none;
+	width: 900px;
+	height: 43px;
+}
+body div.geral div.topo div.menu ul li{
+	list-style: none;
+	padding: 0 13px 0 13px;
+	margin-top: 20px;
+	height: 15px;
+	float: left;
+	color: black;
+	border-right: solid 2px black;
+	font-size: 18px;
+	font-weight: normal;
+}
+body div.geral div.topo div.menu ul li a{
+	text-decoration:none;
+	color: black;
+	text-transform: upper;
+}
+body div.geral div.topo div.menu ul li.bordernone{
+	list-style: none;
+	padding: 0 13px 0 13px;
+	margin-top: 20px;
+	height: 15px;
+	float: left;
+	border: none;
+	color: black;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+
+body div.geral div.buscar{
+	width: 260px;
+	height: 179px;
+	float: left;
+	background-image: url("../images/buscar_por.gif");
+}
+body div.geral div.buscar form{
+	width:225px;
+	height:135px;
+	padding: 50px 0 0 30px;
+}
+body div.geral div.buscar form p{
+	float: left;
+	width: 210px;
+	padding-bottom: 8px;
+}
+body div.geral div.buscar form p label{
+	float: left;
+	width: 60px;
+	font-size:14px;
+}
+body div.geral div.buscar form p select{
+	float: left;
+	width: 150px;
+	font-size:12px;
+}
+body div.geral div.buscar form p input{
+	float: right;
+}
+body div.geral div.vitrine{
+	width: 625px;
+	height: 167px;
+	margin-top: 12px;
+	margin-left: 15px;
+	float: left;
+	background-image: url("../images/vitrine.gif");
+}
+body div.geral div.vitrine ul{
+	width: 625px;
+	height: 167px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+}
+body div.geral div.vitrine ul li{
+	width: 625px;
+	height: 167px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+}
+body div.geral div.vitrine div.nav{
+	position: absolute;
+	z-index:1;
+	width: 150px;
+	height: 15px;
+	padding-top: 140px;
+	padding-left: 10px;
+}
+body div.geral div.vitrine div.nav button{
+	display: block;
+	float: left;
+	text-align: center;
+	margin-right: 10px;
+	line-height: 16px;
+}
+body div.geral div.vitrine ul.nav li button{
+	text-decoration: none;
+}
+body div.geral div.vitrine ul.nav li a:active{
+	text-decoration: none;
+	background-color: white;
+	color: #CFCFCF;
+}
+
+
+body div.geral div.menu_lateral{
+	width: 260px;
+	height: 612px;
+	margin-top: 15px;
+	float: left;
+}
+body div.geral div.menu_lateral div.sobre_nos{
+	width: 260px;
+	height: 336px;
+	float: left;
+	background-image: url("../images/sobre_nos.gif");
+}
+body div.geral div.menu_lateral div.sobre_nos p{
+	width:210px;
+	height:330px;
+	padding: 50px 0 0 30px;
+	float: left;
+	font-size: 14px;
+}
+body div.geral div.menu_lateral div.horario_funcionamento{
+	width: 260px;
+	height: 276px;
+	margin-top: 15px;
+	float: left;
+	background-image: url("../images/horario_funcionamento.gif");
+}
+body div.geral div.menu_lateral div.horario_funcionamento p{
+	width:225px;
+	height:135px;
+	padding: 75px 0 0 30px;
+	float: left;
+	font-size: 16px;
+}
+
+
+body div.geral div.destaques{
+	width: 625px;
+	height: 612px;
+	margin-top:27px;
+	margin-left: 15px;
+	float: left;
+}
+body div.geral div.destaques p.image{
+	margin-top:20px;
+	text-align:center;
+	display:block;
+}
+body div.geral div.destaques p.text{
+	width:280px;
+	padding: 0 10px 0 10px;
+	height:150px;
+	font-size: 16px;
+	float: left;
+}
+body div.geral div.destaques p.text span{
+	font-size: 16px;
+	font-weight: bold;
+	float: left;
+	text-align: center;
+	padding-bottom: 5px;
+	width: 280px;
+}
+body div.geral div.destaques p.text span a{
+	text-decoration: none;
+	color: black;
+}
+body div.geral div.destaques div.destaque1{
+	width: 300px;
+	height: 300px;
+	margin-right: 25px;
+	margin-bottom: 15px;
+	float: left;
+	background-image: url("../images/destaque.gif");
+}
+
+body div.geral div.destaques div.destaque2{
+	width: 300px;
+	height: 300px;
+	margin-bottom: 15px;
+	float: left;
+	background-image: url("../images/destaque.gif");
+}
+body div.geral div.destaques div.destaque3{
+	width: 300px;
+	height: 300px;
+	margin-right: 25px;
+	float: left;
+	background-image: url("../images/destaque.gif");
+}
+
+body div.geral div.destaques div.destaque4{
+	width: 300px;
+	height: 300px;
+	float: left;
+	background-image: url("../images/destaque.gif");
+}
+
+
+body div.geral div.veiculos{
+	width: 900px;
+	height: auto;
+	margin-top:15px;
+	float: left;
+}
+body div.geral div.veiculos div.veiculo1{
+	width: 213px;
+	height: 280px;
+	margin-right: 15px;
+	float: left;
+	background-image: url("../images/box_mini.gif");
+}
+
+body div.geral div.veiculos div.veiculo2{
+	width: 216px;
+	height: 280px;
+	float: left;
+	background-image: url("../images/box_mini2.gif");
+}
+
+body div.geral div.veiculos div.veiculo1 p.image, div.veiculo2 p.image{
+	margin-top:20px;
+	text-align:center;
+	display:block;
+}
+body div.geral div.veiculos div.veiculo1 p.text, div.veiculo2 p.text{
+	width:190px;
+	padding: 0 10px 0 10px;
+	height:150px;
+	font-size: 14px;
+	float: left;
+}
+body div.geral div.veiculos div.veiculo1 p.text span, div.veiculo2 p.text span{
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	text-align: center;
+	padding-bottom: 5px;
+}
+body div.geral div.veiculos div.veiculo1 p.text span a, div.veiculo2 p.text span a{
+	text-decoration: none;
+	color: black;
+}
+
+
+body div.geral div.veiculo_interno{
+	width: 900px;
+	height: 824px;
+	display:block;
+	float: left;
+	margin-top: 15px;
+	background-image: url("../images/veiculos.gif");
+	font-size: 14px;
+}
+body div.geral div.veiculo_interno div.imagens{
+	width: 350px;
+	height: auto;
+	margin: 60px 0 0 20px;
+	float: left;
+	display: block;
+}
+body div.geral div.veiculo_interno div.imagens ul{
+	list-style: none;
+	width: 320px;
+	height: auto;
+}
+body div.geral div.veiculo_interno div.imagens ul li.principal{
+	width: 320px;
+	height: 215px;
+	float: left;
+	margin: 0 0 10px 0;
+}
+body div.geral div.veiculo_interno div.imagens ul li.ultima{
+	width: 64px;
+	height: 48px;
+	float: left;
+	margin: 5px 0 0 1px;
+}
+body div.geral div.veiculo_interno div.imagens ul li{
+	list-style: none;
+	width: 64px;
+	height: 48px;
+	float: left;
+	margin-top: 5px;
+	margin-right: 21px;
+}
+body div.geral div.descricao_principal{
+	width: 480px;
+	height: 278px;
+	float: left;
+	display: block;
+	margin: 60px 0 0 20px;
+}
+body div.geral div.descricao_principal table{
+	width: 480px;
+	height: 215px;
+}
+body div.geral div.descricao_principal table tr td{
+	border: 1px solid #cccccc;
+	width: 504px;
+	padding-top: 9px;
+	padding-left: 10px;
+}
+body div.geral div.descricao_principal table.table_valor{
+	width: 480px;
+	height: 35px;
+	float: left;
+	margin-top: 9px;
+}
+body div.geral div.descricao_principal table.table_valor tr td{
+	font-weight: bold;
+}
+body div.geral div.descricao_secundaria{
+	width: 523px;
+	height: 375px;
+	float: left;
+	display: block;
+	margin: 20px 0 0 37px;
+}
+body div.geral div.descricao_secundaria table{
+	width: 523px;
+	height: 375px;
+}
+body div.geral div.descricao_secundaria table tr td{
+	border: 1px solid #cccccc;
+	width: 523px;
+	padding-top: 9px;
+	padding-left: 10px;
+}
+body div.geral div.descricao_secundaria table tr td.title{
+	height: 35px;
+}
+body div.geral div.proposta{
+	width: 300px;
+	height: 375px;
+	float: left;
+	display: block;
+	margin: 20px 0 0 10px;
+}
+body div.geral div.proposta table{
+	width: 300px;
+	height: 375px;
+}
+body div.geral div.proposta table tr td{
+	border: 1px solid #cccccc;
+	width: 300px;
+	padding-top: 9px;
+	padding-left: 10px;
+}
+body div.geral div.proposta table tr td.title{
+	height: 35px;
+}
+body div.geral div.proposta table tr td.form form{
+	width: 270px;
+}
+body div.geral div.proposta table tr td.form form p{
+	width: 270px;
+	height: 30px;
+	margin-bottom: 5px;
+}
+body div.geral div.proposta table tr td.form form p label{
+	width: 70px;
+	height: 30px;
+	float: left;
+}
+body div.geral div.proposta table tr td.form form p input{
+	width: 170px;
+	margin: 0;
+}
+body div.geral div.proposta table tr td.form form p.textarea{
+	height: 120px;
+}
+body div.geral div.proposta table tr td.form form p textarea{
+	width: 170px;
+	height: 100px;
+}
+body div.geral div.proposta table tr td.form form p.checkbox{
+	height: 20px;
+}
+body div.geral div.proposta table tr td.form form p.checkbox input{
+	width: 12px;
+	height: 20px;
+	float: left;
+	margin-right: 10px;
+}
+body div.geral div.proposta table tr td.form form p.checkbox label{
+	width: 175px;
+	height: 20px;
+	line-height: 14px;
+}
+body div.geral div.proposta table tr td.form form p.button{
+	width: 75px;
+	float: right;
+	margin-right: 2px;
+}
+body div.geral div.proposta table tr td.form form p.button input{
+	width: 75px;
+	float: right;
+	margin-right: 2px;
+}
+
+
+body div.geral div.contato_esquerda{
+	width: 260px;
+	height: 346px;
+	margin-top: 15px;
+	margin-right: 15px;
+	float: left;
+	display: block;
+	background-image: url("../images/fale_conosco.gif");
+}
+body div.geral div.contato_esquerda div.dados{
+	width: 210px;
+	height: 331px;
+	float: left;
+	margin: 50px 0 0 30px;
+}
+body div.geral div.contato_esquerda div.dados p{
+	width: 210px;
+	float: left;
+	margin-bottom: 10px;
+}
+body div.geral div.contato_esquerda div.dados p span{
+	width: 50px;
+	height: 40px;
+	float: left;
+}
+body div.geral div.contato_direita{
+	width: 623px;
+	height: 332px;
+	background-color: white;
+	border: 1px solid #cccccc;
+	float: left;
+	display: block;
+	margin: 27px 0 0 0;
+}
+body div.geral div.contato_direita form{
+	width: 623px;
+	margin: 30px 0 0 30px;
+}
+body div.geral div.contato_direita form p{
+	width: 500px;
+	height: 30px;
+	margin-bottom: 5px;
+}
+body div.geral div.contato_direita form p label{
+	width: 50px;
+	height: 30px;
+	float: left;
+}
+body div.geral div.contato_direita form p input{
+	width: 250px;
+	margin: 0;
+}
+body div.geral div.contato_direita form p.textarea{
+	height: 100px;
+}
+body div.geral div.contato_direita form p textarea{
+	width: 250px;
+	height: 80px;
+}
+body div.geral div.contato_direita form p.button{
+	width: 324px;
+	margin-right: 2px;
+	float: left;
+}
+body div.geral div.contato_direita form p.button input{
+	width: 75px;
+	margin-right: 2px;
+	float: right;
+}
+
+
+body div.geral div.localizacao_esquerda{
+	width: 260px;
+	height: 408px;
+	margin-top: 15px;
+	margin-right: 15px;
+	float: left;
+	display: block;
+	background-image: url("../images/localizacao.gif");
+}
+body div.geral div.localizacao_esquerda div.dados{
+	width: 210px;
+	height: 358px;
+	float: left;
+	margin: 50px 0 0 30px;
+}
+body div.geral div.localizacao_esquerda div.dados p{
+	width: 210px;
+	float: left;
+	margin-bottom: 10px;
+}
+body div.geral div.localizacao_direita{
+	width: 623px;
+	height: 394px;
+	background-color: white;
+	border: 1px solid #cccccc;
+	float: left;
+	display: block;
+	margin: 27px 0 0 0;
+}
+body div.geral div.localizacao_direita img{
+	width: 623px;
+	height: 394px;
+}
+
+
+body div.geral div.empresa{
+	width: 900px;
+	height: 539px;
+	margin-top: 15px;
+	float: left;
+	background-image: url("../images/quem_somos.gif");
+}
+body div.geral div.empresa div.dados{
+	width: 850px;
+	height: 475px;
+	float: left;
+	margin: 50px 0 0 30px;
+}
+body div.geral div.empresa div.dados p img{
+	margin: 0 15px 15px 0;
+	float: left;
+}
+
+body div.geral div.rodape{
+	width: 893px;
+	height: 100px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	padding-right: 5px;
+	background-color: white;
+	border: 1px solid #cccccc;
+	float:left;
+	text-align:right;
+}

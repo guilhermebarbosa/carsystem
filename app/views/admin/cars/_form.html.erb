@@ -1,0 +1,20 @@
+<%= semantic_form_for [:admin, @car], :html => {:multipart => true } do |f| %>
+  <% f.inputs "Dados do Veiculo" do %>
+   <%= f.input :brand_id, :label => "Marca", :as => :select, :collection => Brand.all.collect { |c| [c.name, c.id] }, :prompt => "selecione"  %>
+   <%= f.input :carmodel_id, :label => "Modelo", :as => :select, :collection => @carmodels, :prompt => "selecione"  %>
+   <%= f.input :name %>
+   <%= f.input :state, :label => "Estado", :as => :select, :collection => Car::STATE, :prompt => "selecione"  %>
+   <%= f.input :km %>
+   <%= f.input :price %>
+   <%= f.input :year %>
+   <%= f.input :color %>
+   <%= f.input :telephone %>
+   <%= f.input :highlight, :label => "Destaque?", :as => :boolean %>
+   <%= f.input :description %>
+   <%= f.input :note %>
+  <% end %>
+  
+  <%= render :partial => "admin/attachments/form", :locals => { :form => f, :resource => @car } %>
+  
+  <%= f.buttons :commit %>
+<% end %>

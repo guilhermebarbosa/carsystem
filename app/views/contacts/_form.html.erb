@@ -1,0 +1,38 @@
+<div class="contato_esquerda">
+  <div class="dados">
+    <p>
+      <span>Telefones:</span> (11) 5675-2345 <br> (11) 8965-5422
+    </p>
+    <p>
+      <span>Emails:</span> contato@tracer.com.br <br> sac@tracercar.com.br
+    </p>
+  </div>
+</div>
+
+<div class="contato_direita">
+  <%= form_for(@contact) do |f| %>
+    <p>
+      <%= f.label :name, "Nome" %>
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.label :email, "Email" %>
+      <%= f.text_field :email %>
+    </p>
+    <p>
+      <%= f.label :telephone, "Telefone" %>
+      <%= f.text_field :telephone %>
+    </p>
+    <p>
+      <%= f.label :subject, "Assunto" %>
+      <%= f.text_field :subject %>
+    </p>
+    <p class="textarea">
+      <%= f.label :description, "Descrição" %>
+      <%= f.text_area :description %>
+    </p>
+    <p class="button">
+      <%= f.submit "Enviar" %>
+    </p>
+  <% end %>
+</div>

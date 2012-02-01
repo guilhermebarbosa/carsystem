@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @proposal.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @proposal.email %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%= @proposal.telephone %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @proposal.description %>
+</p>
+
+<p>
+  <b>Finance:</b>
+  <%= @proposal.finance %>
+</p>
+
+<p>
+  <b>Exchange:</b>
+  <%= @proposal.exchange %>
+</p>
+
+
+<%= link_to 'Edit', edit_proposal_path(@proposal) %> |
+<%= link_to 'Back', proposals_path %>

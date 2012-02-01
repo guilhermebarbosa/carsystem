@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carsystem</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag "jquery", "jquery.lightbox-0.5.min", "jcarousellite_1.0.1", "application" %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+  <div class="geral">
+    <div class="topo">
+      <div class="logo">
+        <%= image_tag("logo.gif") %>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Quem Somos", companies_path %></li>
+          <li><%= link_to "Veículo", cars_path %></li>
+          <li><%= link_to "Localização", locations_path %></li>
+          <li class="bordernone"><%= link_to "Fale Conosco", new_contact_path %></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="buscar">
+      <%= form_for @search, :url => cars_path, :html => {:method => :get} do |f| %>
+        <p>
+  			  <%= f.label :state, "Estado" %>
+          <%= f.select :state_eq, Car::STATE, {:include_blank => true} %>
+  			</p>
+        <p>
+  			  <%= f.label :brand, "Marca" %>
+  			  <%= f.select :brand_id_eq, Brand.all.collect { |c| [c.name, c.id] }, {:include_blank => true} %>
+  			</p>
+        <p>
+  			  <%= f.label :carmodel, "Modelo" %>
+  			  <%= f.select :carmodel_id_eq, @carmodels, {:include_blank => true} %>
+  			</p>
+        <p>
+          <%= f.submit "Search" %>
+        </p>
+      <% end %>
+    </div>
+    <div class="vitrine">
+      <ul>
+        <li>
+          <%= image_tag("civic.png", :width => "625", :height => "167") %>
+        </li>
+        <li>
+          <%= image_tag("civic.png", :width => "625", :height => "167") %>
+        </li>
+        <li>
+          <%= image_tag("civic.png", :width => "625", :height => "167") %>
+        </li>
+        <li>
+          <%= image_tag("civic.png", :width => "625", :height => "167") %>
+        </li>
+      </ul>
+      <div class="nav">
+        <button class="1">1</button>
+        <button class="2">2</button>
+        <button class="3">3</button>
+        <button class="4">4</button>
+      </div>
+    </div>
+    <%= yield %>
+    <div class="rodape">
+      Todos os direitos reservados
+    </div>
+  </div>
+</body>
+</html>

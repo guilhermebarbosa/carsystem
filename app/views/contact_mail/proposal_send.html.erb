@@ -1,0 +1,12 @@
+<p>Nova proposta inserida.</p>
+
+<p>
+  Dados da proposta <br>
+  <strong>Veículo:</strong> <%=@proposal.car.name %><br>
+  <strong>Nome:</strong> <%=@proposal.name %><br>
+  <strong>Email:</strong> <%=@proposal.email %><br>
+  <strong>Telefone:</strong> <%=@proposal.telephone %><br>
+  <strong>Quero financiar?</strong> <%= (@proposal.finance == true ? "Sim" : "Não") %><br>
+  <strong>Quero dar veículo na troca?</strong> <%= (@proposal.exchange == true ? "Sim" : "Não") %><br>
+  <strong>Descrição:</strong> <%=@proposal.description %></p>
+</p>

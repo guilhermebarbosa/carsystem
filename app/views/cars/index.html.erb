@@ -1,0 +1,22 @@
+<div class="veiculos">
+<% @x = 1 %>
+<% @cars.each do |car| %>
+  <% if @x == 4 %>
+    <% @car_css = "2" %>
+    <% @x = 1 %>
+  <% else %>
+    <% @car_css = "1" %>
+  <% end %>
+  <div class="veiculo<%=@car_css%>">
+    <p class="image">
+      <%= link_to image_tag(car.attachments[0].url(:thumb)), car.attachments[0].url(:original), :rel => "image" %>
+    </p>
+    <p class="text">
+      <span><%= link_to car.name, car %></strong></span>
+      Ano: <%= car.year %><br>
+      Preço: <%= number_to_currency(car.price, :unit => "R$ ", :separator => ",", :delimiter => ".") %><br>
+    </p>
+  </div>
+  <% @x = @x + 1 %>
+<% end %>
+</div>

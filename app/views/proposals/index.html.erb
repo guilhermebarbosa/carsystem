@@ -1,0 +1,33 @@
+<h1>Listing proposals</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Telephone</th>
+    <th>Description</th>
+    <th>Finance</th>
+    <th>Exchange</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @proposals.each do |proposal| %>
+  <tr>
+    <td><%= proposal.name %></td>
+    <td><%= proposal.email %></td>
+    <td><%= proposal.telephone %></td>
+    <td><%= proposal.description %></td>
+    <td><%= proposal.finance %></td>
+    <td><%= proposal.exchange %></td>
+    <td><%= link_to 'Show', proposal %></td>
+    <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    <td><%= link_to 'Destroy', proposal, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Proposal', new_proposal_path %>

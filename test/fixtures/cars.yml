@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  brand: 
+  carmodel: 
+  price: 9.99
+  year: 1
+  telephone: MyString
+  state: MyString
+  description: MyText
+  km: MyString
+  note: MyText
+
+two:
+  brand: 
+  carmodel: 
+  price: 9.99
+  year: 1
+  telephone: MyString
+  state: MyString
+  description: MyText
+  km: MyString
+  note: MyText

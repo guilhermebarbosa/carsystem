@@ -1,0 +1,110 @@
+<div class="veiculo_interno">
+  <div class="imagens">
+    <ul>
+      <% @x = 0 %>
+      <% @car.attachments.each do |attachment| %>
+        <% if @x == 0 %>
+          <% @class = "class='principal'" %>
+          <% @image = :large %>
+        <% else %>
+          <% if @x == 4 %>
+            <% @class = "class='ultima'" %>
+            <% @x = 0 %>
+          <% else %>
+            <% @class = "" %>
+          <% end %>
+          <% @image = :thumb_interno %>
+        <% end %>
+      <li <%= @class %>>
+        <%= link_to image_tag(attachment.url(@image)), attachment.url(:original), :rel => "image" %>
+      </li>
+        <% @x = @x + 1 %>
+      <% end %>
+    </ul>
+  </div>
+  <div class="descricao_principal">
+    <table>
+      <tr>
+        <td class="linha1">Nome: <%=@car.name%></td>
+      </tr>
+      <tr>
+        <td class="linha2">Marca: <%=@car.brand.name%></td>
+      </tr>
+      <tr>
+        <td class="linha1">Modelo: <%=@car.carmodel.name%></td>
+      </tr>
+      <tr>
+        <td class="linha2">Ano: <%=@car.year%></td>
+      </tr>
+      <tr>
+        <td class="linha1">Estado: <%= (@car.state == "Usado" ? "Usado (" + @car.km + " Km)" : "Novo") %></td>
+      </tr>
+      <tr>
+        <td class="linha2">Cor: <%=@car.color%></td>
+      </tr>
+    </table>
+    
+    <table class="table_valor">
+      <tr>
+        <td class="linha1">Valor: <%= number_to_currency(@car.price, :unit => "R$ ", :separator => ",", :delimiter => ".") %></td>
+      </tr>
+    </table>
+  </div>
+  <div class="descricao_secundaria">
+    <table>
+      <tr>
+        <td class="title linha1">Descrição</td>
+      </tr>
+      <tr>
+        <td class="linha2"><%= @car.description %></td>
+      </tr>
+      <tr>
+        <td class="title linha1">Observação</td>
+      </tr>
+      <tr>
+        <td class="linha2"><%= @car.note %></td>
+      </tr>
+    </table>
+  </div>
+  <div class="proposta">
+    <table>
+      <tr>
+        <td class="title linha1">Enviar Proposta:</td>
+      </tr>
+      <tr>
+        <td class="form linha2">
+          <%= form_for @proposal, :url => proposals_path(@proposal), :method => :put do |f| %>
+            <%= f.hidden_field :car_id, :value => @car_id %>
+            <p>
+              <%= f.label :name, "Nome" %>
+              <%= f.text_field :name %>
+            </p>
+            <p>
+              <%= f.label :email, "Email" %>
+              <%= f.text_field :email %>
+            </p>
+            <p>
+              <%= f.label :telephone, "Telefone" %>
+              <%= f.text_field :telephone %>
+            </p>
+            <p class="textarea">
+              <%= f.label :description, "Descrição" %>
+              <%= f.text_area :description %>
+            </p>
+            <p class="checkbox">
+              <%= f.check_box :finance %>
+              <%= f.label :finance, "Quero financiar o veículo?" %>
+            </p>
+            <p class="checkbox">
+              <%= f.check_box :exchange %>
+              <%= f.label :exchange, "Quero dar veículo na troca?" %>
+            </p>
+            <p class="button">
+              <%= f.submit "Enviar" %>
+            </p>
+          <% end %>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
