@@ -158,6 +158,7 @@ body div.geral div.menu_lateral{
 	width: 260px;
 	height: 612px;
 	margin-top: 15px;
+	margin-bottom: 15px;
 	font-family: Chaparral Pro;
 	font-size: 14px;
 	float: left;
@@ -196,6 +197,7 @@ body div.geral div.destaques{
 	height: 612px;
 	margin-top:27px;
 	margin-left: 15px;
+	margin-bottom: 15px;
 	float: left;
 }
 body div.geral div.destaques p.image{
@@ -214,6 +216,7 @@ body div.geral div.destaques p.text span{
 	font-size: 16px;
 	font-weight: bold;
 	float: left;
+	display:block;
 	text-align: center;
 	padding-bottom: 5px;
 	width: 280px;
@@ -264,6 +267,7 @@ body div.geral div.veiculos div.veiculo1{
 	width: 213px;
 	height: 280px;
 	margin-right: 15px;
+	margin-bottom: 15px;
 	float: left;
 	background-image: url("../images/box_mini.gif");
 }
@@ -284,6 +288,8 @@ body div.geral div.veiculos div.veiculo1 p.text, div.veiculo2 p.text{
 	width:190px;
 	padding: 0 10px 0 10px;
 	height:150px;
+	float: left;
+	display: block;
 	font-size: 14px;
 	float: left;
 }
@@ -291,6 +297,7 @@ body div.geral div.veiculos div.veiculo1 p.text span, div.veiculo2 p.text span{
 	font-size: 14px;
 	font-weight: bold;
 	float: left;
+	display: block;
 	text-align: center;
 	padding-bottom: 5px;
 }
@@ -306,6 +313,7 @@ body div.geral div.veiculo_interno{
 	display:block;
 	float: left;
 	margin-top: 15px;
+	margin-bottom: 15px;
 	background-image: url("../images/veiculos.gif");
 	font-size: 14px;
 }
@@ -326,6 +334,16 @@ body div.geral div.veiculo_interno div.imagens ul li.principal{
 	height: 215px;
 	float: left;
 	margin: 0 0 10px 0;
+}
+body div.geral div.veiculo_interno div.imagens ul li.sem_imagem{
+	width: 320px;
+	height: 215px;
+	float: left;
+	margin: 0 0 10px 0;
+}
+body div.geral div.veiculo_interno div.imagens ul li.sem_imagem img{
+	width: 215px;
+	height: 215px;
 }
 body div.geral div.veiculo_interno div.imagens ul li.ultima{
 	width: 64px;
@@ -476,6 +494,7 @@ body div.geral div.contato_esquerda{
 	height: 346px;
 	margin-top: 15px;
 	margin-right: 15px;
+	margin-bottom: 15px;
 	font-size: 14px;
 	float: left;
 	display: block;
@@ -504,7 +523,7 @@ body div.geral div.contato_direita{
 	border: 1px solid #cccccc;
 	float: left;
 	display: block;
-	margin: 27px 0 0 0;
+	margin: 27px 0 15px 0;
 }
 body div.geral div.contato_direita form{
 	width: 623px;
@@ -548,6 +567,7 @@ body div.geral div.localizacao_esquerda{
 	height: 408px;
 	margin-top: 15px;
 	margin-right: 15px;
+	margin-bottom: 15px;
 	float: left;
 	display: block;
 	background-image: url("../images/localizacao.gif");
@@ -570,7 +590,7 @@ body div.geral div.localizacao_direita{
 	border: 1px solid #cccccc;
 	float: left;
 	display: block;
-	margin: 27px 0 0 0;
+	margin: 27px 0 15px 0;
 }
 body div.geral div.localizacao_direita img{
 	width: 623px;
@@ -601,7 +621,6 @@ body div.geral div.empresa div.dados p img{
 body div.geral div.rodape{
 	width: 893px;
 	height: 100px;
-	margin-top: 15px;
 	margin-bottom: 20px;
 	padding-right: 5px;
 	background-color: white;

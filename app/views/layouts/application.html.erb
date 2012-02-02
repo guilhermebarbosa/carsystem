@@ -42,7 +42,7 @@
   			  <%= f.select :year_eq, Car.find(:all, :conditions => ["year is not null"], :order => "year").collect { |c| [c.year, c.year] }, {:include_blank => true} %>
   			</p>
         <p>
-          <%= f.submit "Search" %>
+          <%= f.submit "Pesquisar" %>
         </p>
       <% end %>
     </div>

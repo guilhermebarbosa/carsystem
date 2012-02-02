@@ -1,4 +1,5 @@
 "pt":
+  logout: "Sair"
   active_admin:  
     dashboard: "Home"
     dashboard_welcome:
@@ -61,6 +62,40 @@
           mb: MB
           tb: TB
   activerecord:
+    errors:
+      models:
+        brand:
+          attributes:
+            name:
+              blank: "O Campo nome precisa ser preenchido."
+        carmodel:  
+          attributes:
+            brand:
+              blank: "O Campo Marca precisa ser selecionado."
+            name:
+              blank: "O Campo nome precisa ser preenchido."
+        car:  
+          attributes:
+            brand_id:
+              blank: "O Campo Marca precisa ser selecionado."
+            carmodel_id:
+              blank: "O Campo Modelo precisa ser selecionado."
+            name:
+              blank: "O Campo nome precisa ser preenchido."
+            state:
+              blank: "O Campo estado precisa ser selecionado."
+            year:
+              blank: "O Campo ano precisa ser preenchido."
+            price:
+              blank: "O Campo preço precisa ser preenchido."
+        company:  
+          attributes:
+            description:
+              blank: "O Campo Descrição precisa ser preenchido."
+        operation:  
+          attributes:
+            description:
+              blank: "O Campo Descrição precisa ser preenchido."        
     attributes:
       car:
         carmodel: "Modelo"
@@ -88,6 +123,7 @@
         created_at: "Criado em"
         updated_at: "Atualizado em"
       carmodel:
+        brand: "Marca"  
         name: "Nome"
         created_at: "Criado em"
         updated_at: "Atualizado em"

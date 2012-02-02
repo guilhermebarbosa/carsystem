@@ -2,23 +2,29 @@
   <div class="imagens">
     <ul>
       <% @x = 0 %>
-      <% @car.attachments.each do |attachment| %>
-        <% if @x == 0 %>
-          <% @class = "class='principal'" %>
-          <% @image = :large %>
-        <% else %>
-          <% if @x == 4 %>
-            <% @class = "class='ultima'" %>
-            <% @x = 0 %>
+      <% if @car.attachments.blank? %>
+        <li class="sem_imagem">
+          <%= image_tag("sem_imagem_large.jpg") %>
+        </li>
+      <% else %>
+        <% @car.attachments.each do |attachment| %>
+          <% if @x == 0 %>
+            <% @class = "class='principal'" %>
+            <% @image = :large %>
           <% else %>
-            <% @class = "" %>
+            <% if @x == 4 %>
+              <% @class = "class='ultima'" %>
+              <% @x = 0 %>
+            <% else %>
+              <% @class = "" %>
+            <% end %>
+            <% @image = :thumb_interno %>
           <% end %>
-          <% @image = :thumb_interno %>
+        <li <%= @class %>>
+          <%= link_to image_tag(attachment.url(@image)), attachment.url(:original), :rel => "image" %>
+        </li>
+          <% @x = @x + 1 %>
         <% end %>
-      <li <%= @class %>>
-        <%= link_to image_tag(attachment.url(@image)), attachment.url(:original), :rel => "image" %>
-      </li>
-        <% @x = @x + 1 %>
       <% end %>
     </ul>
   </div>

@@ -1,5 +1,5 @@
 ActiveAdmin.register Car do
-  before_filter [:load_carmodels], :only=>[:new, :edit, :update]
+  before_filter [:load_carmodels]
   
   index do
     column "Marca", :brand
@@ -16,8 +16,8 @@ ActiveAdmin.register Car do
   controller do
     def load_carmodels
       if !params[:id].blank?
-        car = Car.find(:first, params[:id])
-        @carmodels = Carmodel.find(:all,car.carmodel_id).collect { |c| [c.name, c.id] }
+        car = Car.find(:first, :conditions => ["id = #{params[:id]}"])
+        @carmodels = Carmodel.find(:all, :conditions => ["brand_id = #{car.brand_id}"]).collect { |c| [c.name, c.id] }
       else
         @carmodels = Array.new
       end

@@ -9,10 +9,14 @@
   <% end %>
   <div class="veiculo<%=@car_css%>">
     <p class="image">
-      <%= link_to image_tag(car.attachments[0].url(:thumb)), car %>
+      <% if car.attachments.empty? %>
+        <%= image_tag("sem_imagem.jpg") %>
+      <% else %>
+        <%= link_to image_tag(car.attachments[0].url(:thumb)), car %>
+      <% end %>
     </p>
     <p class="text">
-      <span><%= link_to car.name, car %></strong></span>
+      <span><%= link_to car.name, car %></strong></span><br>
       Ano: <%= car.year %><br>
       Preço: <%= number_to_currency(car.price, :unit => "R$ ", :separator => ",", :delimiter => ".") %><br>
     </p>

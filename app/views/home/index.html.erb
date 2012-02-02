@@ -19,7 +19,11 @@
 <% @highlights.each do |highlight| %>
   <div class="destaque<%=@x%>">
     <p class="image">
-      <%= link_to image_tag(highlight.attachments[0].url(:thumb)), highlight %>
+      <% if highlight.attachments.empty? %>
+        <%= image_tag("sem_imagem.jpg") %>
+      <% else %>
+        <%= link_to image_tag(highlight.attachments[0].url(:thumb)), highlight %>
+      <% end %> 
     </p>
     <p class="text">
       <span><%= link_to highlight.name, highlight %></strong></span><br>
