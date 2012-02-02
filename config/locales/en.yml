@@ -1,5 +1,159 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
-en:
-  hello: "Hello world"
+"en":
+  logout: "Sair"
+  active_admin:  
+    dashboard: "Home"
+    dashboard_welcome:
+      welcome: "Bem vindo ao Active Admin. Esta é a página de painéis padrão."
+      call_to_action: "Para adicionar seções ao painel, verifique 'app/admin/dashboards.rb'"
+    view: "Visualizar"
+    edit: "Editar"
+    delete: "Remover"
+    delete_confirmation: "Você tem certeza que deseja remover este item?"
+    new_model: "Novo(a) %{model}"
+    create_model: "Novo(a) %{model}"
+    edit_model: "Editar %{model}"
+    update_model: "Atualizar %{model}"
+    delete_model: "Remover %{model}"
+    details: "Detalhes do(a) %{model}"
+    cancel: "Cancelar"
+    empty: "Vazio"
+    previous: "Anterior"
+    next: "Próximo"
+    download: "Baixar:"
+    has_many_new: "Adicionar Novo(a) %{model}"
+    has_many_delete: "Remover"
+    filter: "Filtrar"
+    clear_filters: "Limpar Filtros"
+    search_field: "Pesquisar %{field}"
+    equal_to: "Igual A"
+    greater_than: "Maior Que"
+    less_than: "Menor Que"
+    main_content: "Por favor implemente %{model}#main_content para exibir conteúdo."
+    logout: "Sair"
+    sidebars:
+      filters: "Filtros"
+    pagination:
+      empty: "Nenhum(a) %{model} encontrado(a)"
+      one: "Exibindo <b>1</b> %{model}"
+      one_page: "Exibindo <b>todos(as) os(as) %{n}</b> %{model}"
+      multiple: "Exibindo %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> de um total de <b>%{total}</b>"
+      entry:
+        one: "registro"
+        other: "registros"
+    any: "Qualquer"
+    blank_slate:
+      content: "Não existem %{resource_name} ainda."
+      link: "Crie um(a)"
+  time:
+    formats:
+      default: "%A, %d de %B de %Y, %H:%M h"
+      long: "%d/%m/%Y, %H:%M h"
+      short: "%d/%m, %H:%M h"
+  number:      
+    human:
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+  activerecord:
+    errors:
+      models:
+        brand:
+          attributes:
+            name:
+              blank: "O Campo nome precisa ser preenchido."
+        carmodel:  
+          attributes:
+            brand:
+              blank: "O Campo Marca precisa ser selecionado."
+            name:
+              blank: "O Campo nome precisa ser preenchido."
+        car:  
+          attributes:
+            brand_id:
+              blank: "O Campo Marca precisa ser selecionado."
+            carmodel_id:
+              blank: "O Campo Modelo precisa ser selecionado."
+            name:
+              blank: "O Campo nome precisa ser preenchido."
+            state:
+              blank: "O Campo estado precisa ser selecionado."
+            year:
+              blank: "O Campo ano precisa ser preenchido."
+            price:
+              blank: "O Campo preço precisa ser preenchido."
+        company:  
+          attributes:
+            description:
+              blank: "O Campo Descrição precisa ser preenchido."
+        operation:  
+          attributes:
+            description:
+              blank: "O Campo Descrição precisa ser preenchido."        
+    attributes:
+      car:
+        carmodel: "Modelo"
+        brand: "Marca"
+        name: "Nome"
+        price: "Preço"
+        km: "Km Percorridos"
+        year: "Ano"
+        color: "Cor"
+        telephone: "Telefone"
+        description: "Descrição"
+        note: "Observação"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      brand:
+        name: "Nome"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      operation:
+        description: "Descrição"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      company:
+        description: "Descrição"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      carmodel:
+        brand: "Marca"  
+        name: "Nome"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      contact:
+        name: "Nome"
+        telephone: "Telefone"
+        subject: "Assunto"
+        description: "Descrição"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      proposal:
+        name: "Nome"
+        telephone: "Telefone"
+        subject: "Assunto"
+        finance: "Financiar o Veículo?"
+        exchange: "Troca com veículo na Compra?"
+        subject: "Assunto"
+        description: "Descrição"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      admin_user:
+        password: "Senha"
+        remember_me: "Permanecer logado?"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+  devise:
+    sessions:
+      admin_user:
+        signed_in: "Login efetuado com sucesso!"
+
