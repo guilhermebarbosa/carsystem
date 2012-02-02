@@ -289,11 +289,10 @@ body div.geral div.veiculos div.veiculo1 p.text, div.veiculo2 p.text{
 	padding: 0 10px 0 10px;
 	height:150px;
 	float: left;
-	display: block;
 	font-size: 14px;
-	float: left;
 }
 body div.geral div.veiculos div.veiculo1 p.text span, div.veiculo2 p.text span{
+	width: 190px;
 	font-size: 14px;
 	font-weight: bold;
 	float: left;

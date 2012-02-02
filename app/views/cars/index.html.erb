@@ -16,7 +16,7 @@
       <% end %>
     </p>
     <p class="text">
-      <span><%= link_to car.name, car %></strong></span><br>
+      <span><%= link_to car.name, car %></span>
       Ano: <%= car.year %><br>
       Preço: <%= number_to_currency(car.price, :unit => "R$ ", :separator => ",", :delimiter => ".") %><br>
     </p>
